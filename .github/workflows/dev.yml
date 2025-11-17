@@ -29,8 +29,8 @@ jobs:
 
     - name: Lint App
       run: golangci-lint run ./... -E errcheck
-      working-directory: .\03-app\app\
+      working-directory: .\\03-app\\app\\
     
     - name: Test App
       run: go test -v ./...
-      working-directory: .\03-app\app\
+      working-directory: .\\03-app\\app\\
