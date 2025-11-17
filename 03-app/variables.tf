@@ -78,3 +78,4 @@ variable "scale_tracking_cpu" {}
 
 variable "scale_tracking_requests" {}
 
+variable "container_image" {}

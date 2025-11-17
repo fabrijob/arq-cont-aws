@@ -1,5 +1,5 @@
 module "service" {
-  source = "C:\\Users\\ACT-NEW\\Documents\\ExpertAws\\04-service-module"
+  source = "github.com/fabrijob/ecs-service-module?ref=v1"
 
   cluster_name                = var.cluster_name
   region                      = var.region
@@ -15,6 +15,7 @@ module "service" {
   service_launch_type         = var.service_launch_type
   service_task_count          = var.service_task_count
   service_hosts               = var.service_hosts
+  container_image             = var.container_image
 
   vpc_id = data.aws_ssm_parameter.vpc_id.value
   private_subnets = [
